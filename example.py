@@ -1,5 +1,5 @@
 import os
-from pushbullet_python import API
+from pushbullet import API
 
 # set the API Class and link it to the api object
 api = API()

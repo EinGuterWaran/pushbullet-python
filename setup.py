@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from os import path
 
-VERSION = '1.4.0'
+VERSION = '1.6.0'
 DESCRIPTION = 'A Python wrapper around the Pushbullet API.'
 here = path.abspath(path.dirname(__file__))
 # Get the long description from the README file

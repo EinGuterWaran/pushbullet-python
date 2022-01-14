@@ -5,14 +5,13 @@
 ```commandline
 pip3 install pushbullet-python
 ```
-Required Packages:
+Required Package:
 - [requests](https://requests.readthedocs.io/en/master/)
-- requests.structures.CaseInsensitiveDict
 
 ## Usage Example
 ```python
 import os
-from pushbullet_python import API
+from pushbullet import API
 
 # set the API Class and link it to the api object
 api = API()
