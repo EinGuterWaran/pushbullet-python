@@ -1,9 +1,6 @@
 import requests
 from requests.structures import CaseInsensitiveDict
 
-__version__ = '1.0.0'
-__author__ = 'Janu Lingeswaran'
-
 
 class API():
     """ the API Class"""
