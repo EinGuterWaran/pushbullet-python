@@ -1,8 +1,12 @@
 from setuptools import setup, find_packages
+from os import path
 
-VERSION = '1.0.0'
+VERSION = '1.2.0'
 DESCRIPTION = 'A Python wrapper around the Pushbullet API.'
-LONG_DESCRIPTION = 'A Python wrapper for the Pushbullet API to send different types of push notifications to your phone or/and computer.'
+here = path.abspath(path.dirname(__file__))
+# Get the long description from the README file
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
+    LONG_DESCRIPTION = f.read()
 
 # Setting up
 setup(name="pushbullet-python",
@@ -10,7 +14,7 @@ setup(name="pushbullet-python",
       author="Janu Lingeswaran",
       author_email="<janu@lingeswaran.com>",
       description=DESCRIPTION,
-      url = "https://github.com/EinGuterWaran/pushbullet-python",
+      url="https://github.com/EinGuterWaran/pushbullet-python",
       long_description_content_type="text/markdown",
       long_description=LONG_DESCRIPTION,
       packages=find_packages(),
