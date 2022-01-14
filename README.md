@@ -34,6 +34,6 @@ api.send_link("A Link", "Here is my website.", "http://www.lingeswaran.com")
 
 # sending a file, arguments: title, message, file name, file type, file url
 api.send_file("An Example Image", "Check out the example image!",
-              "test_image.png", "image/jpeg",
+              "test_image.png", "image/png",
               "https://dummyimage.com/600x400/000/fff")
 ```
