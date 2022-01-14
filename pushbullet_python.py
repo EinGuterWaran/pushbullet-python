@@ -1,13 +1,13 @@
-import os
 import requests
 from requests.structures import CaseInsensitiveDict
 
-access_token = os.environ['access_token']
+__version__ = '1.0.0'
+__author__ = 'Janu Lingeswaran'
 
 
 class API():
     """ the API Class"""
-    def __init(self):
+    def __init__(self):
         """ Initialize a API Class"""
         self.url = "https://api.pushbullet.com/"
 
@@ -16,7 +16,7 @@ class API():
         self.token = token
         #simply set the token
 
-    def send_push_note(self, title, body):
+    def send_note(self, title, body):
         """ Send a note as a push notification """
         headers = CaseInsensitiveDict()
         headers["Access-Token"] = self.token
@@ -26,7 +26,7 @@ class API():
         resp = requests.post(url, headers=headers, data=data)
         print(resp.status_code)
 
-    def send_push_link(self, title, body, url_to_send):
+    def send_link(self, title, body, url_to_send):
         """ Send a link as a push notification """
         headers = CaseInsensitiveDict()
         headers["Access-Token"] = self.token
@@ -36,7 +36,7 @@ class API():
         resp = requests.post(url, headers=headers, data=data)
         print(resp.status_code)
 
-    def send_push_file(self, title, body, file_name, file_type, file_url):
+    def send_file(self, title, body, file_name, file_type, file_url):
         """ Send a file as a push notification """
         headers = CaseInsensitiveDict()
         headers["Access-Token"] = self.token
