@@ -1,8 +1,7 @@
 # pushbullet-python
 #### A Python wrapper around the Pushbullet API to send different types of push notifications to your phone or/and computer.
 
-## Use
-### Installation
+## Installation
 ```commandline
 pip3 install pushbullet-python
 ```
@@ -10,7 +9,7 @@ Required Packages:
 - [requests](https://requests.readthedocs.io/en/master/)
 - requests.structures.CaseInsensitiveDict
 
-### Usage Example
+## Usage Example
 ```python
 import os
 from pushbullet_python import API
