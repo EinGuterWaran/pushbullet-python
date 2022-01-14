@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 from os import path
 
-VERSION = '1.3.0'
+VERSION = '1.4.0'
 DESCRIPTION = 'A Python wrapper around the Pushbullet API.'
 here = path.abspath(path.dirname(__file__))
 # Get the long description from the README file
@@ -19,7 +19,7 @@ setup(name="pushbullet-python",
       long_description=LONG_DESCRIPTION,
       license='MIT License',
       packages=find_packages(),
-      install_requires=['requests', 'requests.structures.CaseInsensitiveDict'],
+      install_requires=['requests'],
       keywords=[
           'python', 'push bullet', 'push', 'bullet', 'push notifications',
           'push notification', 'API wrapper'
