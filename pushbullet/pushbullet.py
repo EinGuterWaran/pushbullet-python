@@ -21,7 +21,7 @@ class API():
         data = '{"body":"' + body + '","title":"' + title + '","type":"note"}'
         url = self.url + "v2/pushes"
         resp = requests.post(url, headers=headers, data=data)
-        print(resp.status_code)
+        return resp
 
     def send_link(self, title, body, url_to_send):
         """ Send a link as a push notification """
@@ -31,7 +31,7 @@ class API():
         data = '{"body":"' + body + '","title":"' + title + '","type":"link", "url":"' + url_to_send + '"}'
         url = self.url + "v2/pushes"
         resp = requests.post(url, headers=headers, data=data)
-        print(resp.status_code)
+        return resp
 
     def send_file(self, title, body, file_name, file_type, file_url):
         """ Send a file as a push notification """
@@ -41,4 +41,4 @@ class API():
         data = '{"body":"' + body + '","title":"' + title + '","file_name":"' + file_name + '","file_type":"' + file_type + '","file_url":"' + file_url + '","type":"file"}'
         url = self.url + "v2/pushes"
         resp = requests.post(url, headers=headers, data=data)
-        print(resp.status_code)
+        return resp
